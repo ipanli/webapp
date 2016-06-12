@@ -1,0 +1,42 @@
+{
+  "name": "webapp",
+  "version": "0.0.1",
+  "description": "",
+  "main": "gulpfile.babel.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipanli/webapp.git"
+  },
+  "keywords": [
+    "webapp"
+  ],
+  "author": "Julian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ipanli/webapp/issues"
+  },
+  "homepage": "https://github.com/ipanli/webapp#readme",
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-register": "^6.9.0",
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-header": "^1.8.2",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-uglify": "^1.5.3"
+  },
+  "dependencies": {
+    "normalize.css": "^4.1.1"
+  }
+}
