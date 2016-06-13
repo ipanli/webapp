@@ -373,19 +373,14 @@ textarea {
   right: 0;
   bottom: 0;
   overflow: hidden; }
+  .wp img {
+    max-width: 100%; }
 
 .page {
   font-size: 72px;
   line-height: 320px;
-  text-align: center; }
-
-.page1 {
-  background: #E4F0FF;
-  background: url(../images/bg1.png) no-repeat center center;
-  background-size: cover; }
-
-.page2 {
-  background: #D1E6FF; }
+  text-align: center;
+  position: relative; }
 
 /* 箭头 */
 @keyframes start {
@@ -405,16 +400,16 @@ textarea {
   margin-left: -17px;
   top: 95%;
   margin-top: -24px;
-  width: 34px;
-  height: 34px; }
+  width: 64px;
+  height: 64px; }
 
 .start b {
   position: absolute;
   left: 50%;
   top: 10px;
   margin-left: -9px;
-  width: 12px;
-  height: 11.5px;
+  width: 24px;
+  height: 23px;
   background: url(../images/next.png);
   background-size: 100% 100%;
   -webkit-animation: start 1.5s infinite ease-in-out;
@@ -1204,6 +1199,51 @@ stretchRight
     -webkit-transform: scaleX(1.01); }
   100% {
     -webkit-transform: scaleX(1); } }
+
+.page1 {
+  position: relative;
+  background: #E4F0FF;
+  background: url(../images/bg1.png) no-repeat center center;
+  background-size: cover; }
+
+.main1 {
+  display: block;
+  height: 100%;
+  width: 100%; }
+  .main1 img {
+    max-height: 100%;
+    max-width: 100%;
+    width: 694px;
+    height: 968px; }
+  .main1 .imgbgbox {
+    height: 100%;
+    width: 100%;
+    background: url(../images/main1.png) no-repeat center center;
+    background-size: 649px 968px; }
+
+.page2 {
+  position: relative;
+  background: #D1E6FF;
+  background: url(../images/bg2.png) no-repeat center center;
+  background-size: cover; }
+
+.main2 {
+  position: relative;
+  height: 100%;
+  width: 100%; }
+  .main2 .imgbgbox {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: url(../images/mainp2.png) no-repeat center bottom;
+    background-size: 750px 1043px; }
+  .main2 .down-btn {
+    display: block;
+    position: absolute;
+    height: 84px;
+    bottom: 30px;
+    left: 30px;
+    right: 30px; }
 
 .fadeIn {
   animation-name: fadeIn;

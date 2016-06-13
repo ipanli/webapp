@@ -15,6 +15,7 @@ import notify       from 'gulp-notify';
 import imagemin     from 'gulp-imagemin';
 import header       from 'gulp-header';
 import autoprefixer from 'gulp-autoprefixer';
+import px2rem       from 'gulp-px3rem';
 
 
 
@@ -41,8 +42,11 @@ gulp.task('sass', () => gulp.src(`./${day}/src/scss/main.scss`)
 			browsers: ['last 2 versions'],
 			cascade: false
 	 }))
+    .pipe(px2rem())
     .pipe(rename(mincss))
+    .pipe(gulp.dest(`./${day}/.tmp/`))
     .pipe(minifycss())
+    
     .pipe(header(banner, { pkg }))
     .pipe(gulp.dest(`./${day}/build/css/`))
     .pipe(reload({stream: true}))
