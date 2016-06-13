@@ -244,6 +244,7 @@ var Zepto=function(){function L(t){return null==t?String(t):T[j.call(t)]||"objec
  */
 
 $('.wp-inner').fullpage({
+            loop:true,
             change: function (e) {
                 // 移除动画属性
                 $('.page').eq(e.cur).find('.js-animate').each(function() {

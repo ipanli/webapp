@@ -5,6 +5,7 @@
   "main": "gulpfile.babel.js",
   "scripts": {
     "start": "gulp",
+    "img":"gulp images",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -380,49 +380,31 @@ textarea {
   text-align: center; }
 
 .page1 {
-  background: #000; }
+  background: #E4F0FF;
+  background: url(../images/bg1.png) no-repeat center center;
+  background-size: cover; }
 
 .page2 {
-  background: #555; }
-
-.page3 {
-  background: maroon; }
-
-.page4 {
-  background: green; }
-
-.page5 {
-  background: blue; }
+  background: #D1E6FF; }
 
 /* 箭头 */
-@-webkit-keyframes start {
-  0%, 30% {
-    opacity: 0.2;
-    -webkit-transform: translate(0, 10px); }
-  60% {
-    opacity: 1;
-    -webkit-transform: translate(0, 0); }
-  100% {
-    opacity: 0.2;
-    -webkit-transform: translate(0, -5px); } }
-
 @keyframes start {
-  0%, 30% {
-    opacity: 0.2;
+  0% {
+    opacity: .2;
     transform: translate(0, 10px); }
-  60% {
+  50% {
     opacity: 1;
     transform: translate(0, 0); }
   100% {
     opacity: 0.2;
-    transform: translate(0, -5px); } }
+    transform: translate(0, 10px); } }
 
 .start {
   position: fixed;
   left: 50%;
   margin-left: -17px;
   top: 95%;
-  margin-top: -34px;
+  margin-top: -24px;
   width: 34px;
   height: 34px; }
 
@@ -431,9 +413,9 @@ textarea {
   left: 50%;
   top: 10px;
   margin-left: -9px;
-  width: 19px;
-  height: 12px;
-  background: url(../images/arrow.png);
+  width: 12px;
+  height: 11.5px;
+  background: url(../images/next.png);
   background-size: 100% 100%;
   -webkit-animation: start 1.5s infinite ease-in-out;
   animation: start 1.5s infinite ease-in-out; }
