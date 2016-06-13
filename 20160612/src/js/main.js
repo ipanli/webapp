@@ -7,6 +7,8 @@ $(function(){
 
     var pageNum = $(".page").length;
 
+    APPDown();
+
     $('.wp-inner').fullpage({
                 loop:true,
                 change: function (e) {
@@ -20,8 +22,6 @@ $(function(){
                     }else{
                         $(".start").show();
                     }
-
-                    console.log(e)
                 },
                 afterChange: function (e) {
                     // 添加动画属性
