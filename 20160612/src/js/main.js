@@ -31,5 +31,9 @@ $(function(){
                         });
                 }
     });
+
+
+    $(".loading").hide();
+
 })
 

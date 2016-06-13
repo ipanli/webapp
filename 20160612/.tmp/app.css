@@ -508,9 +508,29 @@ textarea {
   margin-left: -0.12rem;
   width: 0.32rem;
   height: 0.306667rem;
-  background: url(../images/next.png);
+  background: url(../images/next.png) no-repeat;
   background-size: 100% 100%;
   animation: start 1.5s infinite ease-in-out;
+}
+
+.loading {
+  position: absolute;
+  z-index: 99999;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #FFF;
+}
+
+.loading .svgbox {
+  width: 144px;
+  height: 144px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -72px;
+  margin-left: -72px;
 }
 
 /*

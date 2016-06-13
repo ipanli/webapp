@@ -256,6 +256,38 @@ function APPDown(){
     $(".down-btn").attr("href",downUrl)
 
 }
+
+
+
+function loadImage(id,src,callback){
+
+    var imgloader= new window.Image();
+    //当图片成功加载到浏览器缓存
+    imgloader.onload =function(evt)  
+    {
+        if(typeof(imgloader.readyState)=='undefined')
+        {
+        imgloader.readyState = 'undefined';
+        }
+                //在IE8以及以下版本中需要判断readyState而不是complete
+        if ((imgloader.readyState=='complete'||imgloader.readyState=="loaded")||imgloader.complete){ 
+            callback({'msg':'ok','src':src,'id':id});
+        }else{
+            imgloader.onreadystatechange(evt);
+        }
+    };
+    //当加载出错或者图片不存在
+    imgloader.onerror = function(evt){
+        callback({'msg':'error','id':id});
+    }
+    //当加载状态改变                       
+    imgloader.onreadystatechange = function(e) { 
+        //此方法只有IE8以及一下版本会调用		
+    } 
+
+    imgloader.src=src;
+   
+}
 /*
  */
 (function($, window, undefined) {
@@ -527,5 +559,9 @@ $(function(){
                         });
                 }
     });
+
+
+    $(".loading").hide();
+
 })
 

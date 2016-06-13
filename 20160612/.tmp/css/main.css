@@ -410,10 +410,31 @@ textarea {
   margin-left: -9px;
   width: 24px;
   height: 23px;
-  background: url(../images/next.png);
+  background: url(../images/next.png) no-repeat;
   background-size: 100% 100%;
   -webkit-animation: start 1.5s infinite ease-in-out;
   animation: start 1.5s infinite ease-in-out; }
+
+.loading {
+  position: absolute;
+  z-index: 99999;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #FFF; }
+  .loading .svgbox {
+    width: 144px;
+    /*no*/
+    height: 144px;
+    /*no*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -72px;
+    /*no*/
+    margin-left: -72px;
+    /*no*/ }
 
 /*
 ==============================================
