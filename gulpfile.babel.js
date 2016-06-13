@@ -19,7 +19,8 @@ import px2rem       from 'gulp-px3rem';
 
 
 
-const day = '20160612', mincss = 'app.css', minjs = 'app.js';
+const day = '20160612', mincss = 'app.css', minjs = 'app.js',desc = '拼邮分享H5';
+
 
 const browserSync = require('browser-sync').create();
 const reload      = browserSync.reload;
@@ -29,7 +30,8 @@ const banner = [
     '<%= pkg.name %> ',
     'v<%= pkg.version %> | ',
     `(c) ${new Date()} <%= pkg.author %> |`,
-    ' <%= pkg.homepage %>',
+    ' <%= pkg.homepage %> ',
+    ' <%= pkg.description %>',
   ' */',
   '\n'
 ].join('');
@@ -77,7 +79,7 @@ gulp.task('html',() => {
 });
 
     // 静态服务器 + 监听 scss/html 文件
-gulp.task('dev', ['sass'], () => {
+gulp.task('dev', ['sass','scripts'], () => {
 
     browserSync.init({
         server: `./${day}/`
