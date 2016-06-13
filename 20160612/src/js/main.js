@@ -35,5 +35,8 @@ $(function(){
 
     $(".loading").hide();
 
+
+    alert(isWeiXin());
+
 })
 
