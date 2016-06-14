@@ -481,13 +481,16 @@ function APPDown(){
             }else{
                 //ios
                 //唤醒app
-                window.open('panliapp://openapp', "_self");
-
+                // window.open('panliapp://openapp', "_self");
+                
+                window.open('itms-apps://itunes.apple.com/app/id590216292',"_self")
+                // window.location = 'panliapp://openapp';
 
                 //没有安装应用会跳到 appStore
-                setTimeout(function(){
-                    window.open('itms-apps://itunes.apple.com/app/id590216292')
-                 },2000);
+                // setTimeout(function(){
+                //     window.location = 'itms-apps://itunes.apple.com/app/id590216292';
+                // //    window.open('itms-apps://itunes.apple.com/app/id590216292');
+                //  },1500);
             }
         }
     })
