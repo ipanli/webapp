@@ -55,19 +55,20 @@ function APPDown(){
                 content: '正在为您跳转...',
                 time: 5
             });
-            // $(".down-btn").attr("href",downUrl);
         }else{
-            if(isAndroid){
+             if(isAndroid){
                 //android
-                //此操作会调起app并阻止接下来的js执行
+                //唤醒app并阻止接下来的js执行
                 $('body').append("<iframe src='panliapp://openapp' style='display:none' target='' ></iframe>");
 
-                //没有安装应用会执行下面的语句
+                //没有安装应用会跳转下载地址
                 setTimeout(function(){window.location = Android},600);
             }else{
                 //ios
-                // window.location = 'panliapp://openapp';
+                //唤醒app
                 window.open('panliapp://openapp', "_self");
+
+                //没有安装应用会跳到 appStore
                 setTimeout(function(){window.location = 'itms-apps://itunes.apple.com/app/id590216292'},300);
             }
         }
