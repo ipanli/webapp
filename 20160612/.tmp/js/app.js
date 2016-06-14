@@ -465,9 +465,18 @@ function APPDown(){
             downUrl = Android;
       } 
 
+
+       if(isWeixinBrowser() || isQQBrowser()){
+
+            $(".down-btn").attr("href",'http://www.panli.com')
+           
+       }
+
     $("a[href^='panliapp://']").on('click',function(e){
         e.preventDefault();
         if(isWeixinBrowser() || isQQBrowser()){
+
+         
             window.open(downUrl)
             PL.open({
                 content: '正在为您跳转...',
