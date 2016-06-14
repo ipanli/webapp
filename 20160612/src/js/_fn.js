@@ -60,8 +60,9 @@ function APPDown(){
                 //android
                 //唤醒app并阻止接下来的js执行
                 $('body').append("<iframe src='panliapp://openapp' style='display:none' target='' ></iframe>");
-
-                //没有安装应用会跳转下载地址
+                // window.open('panliapp://openapp', "_self");
+                // 没有安装应用会跳转下载地址
+                
                 setTimeout(function(){window.location = Android},600);
             }else{
                 //ios
