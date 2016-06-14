@@ -483,8 +483,11 @@ function APPDown(){
                 //唤醒app
                 window.open('panliapp://openapp', "_self");
 
+
                 //没有安装应用会跳到 appStore
-                setTimeout(function(){window.location = 'itms-apps://itunes.apple.com/app/id590216292'},1000);
+                setTimeout(function(){
+                    window.open('itms-apps://itunes.apple.com/app/id590216292')
+                 },2000);
             }
         }
     })
