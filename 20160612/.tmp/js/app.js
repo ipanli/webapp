@@ -246,14 +246,37 @@ function APPDown(){
     var Android = 'https://ad.apps.fm/tkfd04r4dxcGudYs0BPY2q5px440Px0vtrw1ww5B54zLvIIEY2TL1pcyA09eK7cfiGoUv6ck5zsybPsRVqKMKw';
 
     var downUrl = ios;
-
+    
+    var u = navigator.userAgent;
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
 
     if(detectOS() == 'Android'){
             downUrl = Android;
       } 
 
+    $("a[href^='panliapp://']").on('click',function(e){
+        e.preventDefault();
+        if(isWeixinBrowser() || isQQBrowser()){
+            
+            $(".down-btn").attr("href",downUrl)
+        }else{
+            if(isAndroid){
+                //android
+                //此操作会调起app并阻止接下来的js执行
+                $('body').append("<iframe src='panliapp://openapp' style='display:none' target='' ></iframe>");
 
-    $(".down-btn").attr("href",downUrl)
+                //没有安装应用会执行下面的语句
+                setTimeout(function(){window.location = Android},600);
+            }else{
+                //ios
+                // window.location = 'panliapp://openapp';
+                window.open('panliapp://openapp', "_self");
+                setTimeout(function(){window.location = 'itms-apps://itunes.apple.com/app/id590216292'},300);
+            }
+        }
+    })
+    // $(".down-btn").attr("href",downUrl)
 
 }
 
@@ -299,6 +322,15 @@ function isWeiXin(){
 }
 
 
+function isWeixinBrowser() {
+    var ua = window.navigator.userAgent.toLowerCase();
+        return (/micromessenger/.test(ua)) ? true : false;
+}
+
+function isQQBrowser() {
+    var ua = window.navigator.userAgent.toLowerCase();
+    return (ua.match(/QQ/i) == "qq") ? true : false;
+}
 /*
  */
 (function($, window, undefined) {
@@ -575,7 +607,12 @@ $(function(){
     $(".loading").hide();
 
 
-    alert(isWeiXin());
+
+
+    
+
+
+    // alert(isWeiXin());
 
 })
 

@@ -36,7 +36,12 @@ $(function(){
     $(".loading").hide();
 
 
-    alert(isWeiXin());
+
+
+    
+
+
+    // alert(isWeiXin());
 
 })
 
