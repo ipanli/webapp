@@ -452,8 +452,8 @@ function APPDown(){
     // var Android = 'https://ad.apps.fm/tkfd04r4dxcGudYs0BPY2q5px440Px0vtrw1ww5B54zLvIIEY2TL1pcyA09eK7cfiGoUv6ck5zsybPsRVqKMKw';
 
 
-    var ios = 'https://appsto.re/cn/KXFlJ.i';
-    var Android = 'https://play.google.com/store/apps/details?id=com.panli.android&hl=zh_CN';
+    var ios = 'http://a.app.qq.com/o/simple.jsp?pkgname=com.panli.android';
+    var Android = 'http://a.app.qq.com/o/simple.jsp?pkgname=com.panli.android';
 
     var downUrl = ios;
     
@@ -466,11 +466,11 @@ function APPDown(){
       } 
 
 
-       if(isWeixinBrowser() || isQQBrowser()){
+    //    if(isWeixinBrowser() || isQQBrowser()){
 
-            $(".down-btn").attr("href",'http://www.panli.com')
+    //         $(".down-btn").attr("href",'http://www.panli.com')
            
-       }
+    //    }
 
     $("a[href^='panliapp://']").on('click',function(e){
         e.preventDefault();
