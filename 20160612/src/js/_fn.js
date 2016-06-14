@@ -72,8 +72,8 @@ function APPDown(){
              if(isAndroid){
                 //android
                 //唤醒app并阻止接下来的js执行
-                $('body').append("<iframe src='panliapp://openapp' style='display:none' target='' ></iframe>");
-                // window.open('panliapp://openapp', "_self");
+                // $('body').append("<iframe src='panliapp://openapp' style='display:none' target='' ></iframe>");
+                // window.open('panliapp://openapp', "_self"); 
                 // 没有安装应用会跳转下载地址
                 window.open(downUrl);
                 // setTimeout(function(){window.location = Android},1000);
