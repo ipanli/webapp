@@ -474,9 +474,7 @@ function APPDown(){
 
     $("a[href^='panliapp://']").on('click',function(e){
         e.preventDefault();
-        if(isWeixinBrowser() || isQQBrowser()){
-
-         
+        if(isWeixinBrowser()){
             window.open(downUrl)
             PL.open({
                 content: '正在为您跳转...',
