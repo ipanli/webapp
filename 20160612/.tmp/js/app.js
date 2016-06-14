@@ -477,14 +477,14 @@ function APPDown(){
                 // window.open('panliapp://openapp', "_self");
                 // 没有安装应用会跳转下载地址
                 
-                setTimeout(function(){window.location = Android},600);
+                setTimeout(function(){window.location = Android},1000);
             }else{
                 //ios
                 //唤醒app
                 window.open('panliapp://openapp', "_self");
 
                 //没有安装应用会跳到 appStore
-                setTimeout(function(){window.location = 'itms-apps://itunes.apple.com/app/id590216292'},300);
+                setTimeout(function(){window.location = 'itms-apps://itunes.apple.com/app/id590216292'},1000);
             }
         }
     })

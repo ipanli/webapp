@@ -593,6 +593,17 @@ textarea {
   position: relative; }
 
 /* 箭头 */
+@-webkit-keyframes start {
+  0% {
+    opacity: .2;
+    transform: translate(0, 10px); }
+  50% {
+    opacity: 1;
+    transform: translate(0, 0); }
+  100% {
+    opacity: 0.2;
+    transform: translate(0, 10px); } }
+
 @keyframes start {
   0% {
     opacity: .2;
