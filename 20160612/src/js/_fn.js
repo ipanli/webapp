@@ -50,8 +50,12 @@ function APPDown(){
     $("a[href^='panliapp://']").on('click',function(e){
         e.preventDefault();
         if(isWeixinBrowser() || isQQBrowser()){
-            
-            $(".down-btn").attr("href",downUrl)
+            window.open(downUrl)
+            PL.open({
+                content: '正在为您跳转...',
+                time: 5
+            });
+            // $(".down-btn").attr("href",downUrl);
         }else{
             if(isAndroid){
                 //android
