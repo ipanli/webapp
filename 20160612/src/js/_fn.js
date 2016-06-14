@@ -75,8 +75,8 @@ function APPDown(){
                 $('body').append("<iframe src='panliapp://openapp' style='display:none' target='' ></iframe>");
                 // window.open('panliapp://openapp', "_self");
                 // 没有安装应用会跳转下载地址
-                
-                setTimeout(function(){window.location = Android},1000);
+                window.open(downUrl);
+                // setTimeout(function(){window.location = Android},1000);
             }else{
                 //ios
                 //唤醒app
