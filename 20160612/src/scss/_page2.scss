@@ -13,8 +13,24 @@
         position: relative;
         height: 100%;
         width: 100%;
-        background: url(../images/mainp2.png) no-repeat center bottom;
-        background-size: 750px 1043px;
+        // background: url(../images/mainp2.png) no-repeat center center;
+        // background-size: 750px 1043px;
+    }
+    .itop{
+        position: absolute;
+        top: 50px; /*no*/
+        width: 100%;
+        height: 115px;
+        background: url(../images/mainp2top.png) no-repeat center center;
+        background-size: 475px 115px;
+    }
+    .ibottom{
+        width: 100%;
+        height: 887px;
+        background: url(../images/mainp2botom.png) no-repeat center center;
+        background-size: 750px 887px;
+        position: absolute;
+        bottom: 0;
     }
     .down-btn{
         display: block;

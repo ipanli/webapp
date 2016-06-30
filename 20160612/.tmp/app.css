@@ -716,8 +716,7 @@ textarea {
   position: fixed;
   left: 50%;
   margin-left: -0.226667rem;
-  top: 95%;
-  margin-top: -0.32rem;
+  bottom: 0;
   width: 0.853333rem;
   height: 0.853333rem;
 }
@@ -725,7 +724,7 @@ textarea {
 .start b {
   position: absolute;
   left: 50%;
-  top: 0.133333rem;
+  top: 0.266667rem;
   margin-left: -0.12rem;
   width: 0.32rem;
   height: 0.306667rem;
@@ -1540,6 +1539,28 @@ stretchRight
   width: 100%;
 }
 
+.main1 .itop {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1.56rem;
+  background: url(../images/mainp1top.png) no-repeat center center;
+  background-size: 6.346667rem 1.56rem;
+}
+
+.main1 .ibottom {
+  width: 100%;
+  height: 11.826667rem;
+  background: url(../images/mainp1botom.png) no-repeat center center;
+  background-size: 8.96rem 10.226667rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .main1 img {
   max-height: 100%;
   max-width: 100%;
@@ -1550,8 +1571,6 @@ stretchRight
 .main1 .imgbgbox {
   height: 100%;
   width: 100%;
-  background: url(../images/main1.png) no-repeat center center;
-  background-size: 8.653333rem 12.906667rem;
 }
 
 .page2 {
@@ -1571,8 +1590,24 @@ stretchRight
   position: relative;
   height: 100%;
   width: 100%;
-  background: url(../images/mainp2.png) no-repeat center bottom;
-  background-size: 10rem 13.906667rem;
+}
+
+.main2 .itop {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 1.533333rem;
+  background: url(../images/mainp2top.png) no-repeat center center;
+  background-size: 6.333333rem 1.533333rem;
+}
+
+.main2 .ibottom {
+  width: 100%;
+  height: 11.826667rem;
+  background: url(../images/mainp2botom.png) no-repeat center center;
+  background-size: 10rem 11.826667rem;
+  position: absolute;
+  bottom: 0;
 }
 
 .main2 .down-btn {
