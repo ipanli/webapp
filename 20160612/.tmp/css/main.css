@@ -1453,21 +1453,21 @@ stretchRight
   width: 100%; }
   .main1 .itop {
     position: absolute;
-    top: 60px;
+    top: 52px;
     /*no*/
     left: 0;
     right: 0;
     width: 100%;
-    height: 117px;
+    height: 119px;
     background: url(../images/mainp1top.png) no-repeat center center;
-    background-size: 476px 117px; }
+    background-size: 476px 119px; }
   .main1 .ibottom {
     width: 100%;
     height: 887px;
-    background: url(../images/mainp1botom.png) no-repeat center center;
+    background: url(../images/mainp1botom.png) no-repeat center bottom;
     background-size: 672px 767px;
     position: absolute;
-    bottom: 0;
+    bottom: 64px;
     left: 0;
     right: 0; }
   .main1 img {
@@ -1495,12 +1495,12 @@ stretchRight
     width: 100%; }
   .main2 .itop {
     position: absolute;
-    top: 50px;
+    top: 52px;
     /*no*/
     width: 100%;
-    height: 115px;
-    background: url(../images/mainp2top.png) no-repeat center center;
-    background-size: 475px 115px; }
+    height: 119px;
+    background: url(../images/mainp2top.png) no-repeat center bottom;
+    background-size: 474px 119px; }
   .main2 .ibottom {
     width: 100%;
     height: 887px;

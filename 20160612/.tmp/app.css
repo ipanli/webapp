@@ -1541,22 +1541,22 @@ stretchRight
 
 .main1 .itop {
   position: absolute;
-  top: 60px;
+  top: 52px;
   left: 0;
   right: 0;
   width: 100%;
-  height: 1.56rem;
+  height: 1.586667rem;
   background: url(../images/mainp1top.png) no-repeat center center;
-  background-size: 6.346667rem 1.56rem;
+  background-size: 6.346667rem 1.586667rem;
 }
 
 .main1 .ibottom {
   width: 100%;
   height: 11.826667rem;
-  background: url(../images/mainp1botom.png) no-repeat center center;
+  background: url(../images/mainp1botom.png) no-repeat center bottom;
   background-size: 8.96rem 10.226667rem;
   position: absolute;
-  bottom: 0;
+  bottom: 0.853333rem;
   left: 0;
   right: 0;
 }
@@ -1594,11 +1594,11 @@ stretchRight
 
 .main2 .itop {
   position: absolute;
-  top: 50px;
+  top: 52px;
   width: 100%;
-  height: 1.533333rem;
-  background: url(../images/mainp2top.png) no-repeat center center;
-  background-size: 6.333333rem 1.533333rem;
+  height: 1.586667rem;
+  background: url(../images/mainp2top.png) no-repeat center bottom;
+  background-size: 6.32rem 1.586667rem;
 }
 
 .main2 .ibottom {
