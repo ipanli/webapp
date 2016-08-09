@@ -1,0 +1,75 @@
+.help-problem {
+    background: #FFF;
+    color: #666;
+    h5 {
+        padding: 0;
+        margin: 0;
+        margin-left: 30px;
+        font-size: 28px;
+        border-bottom: 1px solid #D8D8D8;
+        position: relative;
+        padding: 20px;
+        padding-left: 30px;
+        font-weight: 400;
+        &:before {
+            position: absolute;
+            display: block;
+            height: 30px;
+            width: 6px;
+            left: 0;
+            top: 50%;
+            margin-top: -15px;
+            background: #FF6E6E;
+            content: '';
+        }
+        &:after {
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            margin-top: -8px;
+            cursor: pointer;
+            display: block;
+            content: '';
+            font-size: 0px;
+            border-style: solid;
+            border-width: 16px;
+            border-color: #fff;
+            border-top-color: #999;
+            height: 0px;
+            width: 0px;
+        }
+    }
+    p {
+        padding: 0;
+        margin: 0;
+        font-size: 26px;
+    }
+    li {
+        &.show {
+            .title {
+                &:after {
+                    display: none;
+                }
+            }
+            .content-wp {
+                display: block;
+            }
+        }
+    }
+    .content-wp {
+        padding: 10px 30px;
+        line-height: 40px;
+        border-bottom: 1px solid #D8D8D8;
+        display: none;
+        .content {
+            padding-bottom: 10px;
+        }
+    }
+    .pack-up {
+        cursor: pointer;
+        height: 16px;
+        padding: 10px;
+        background: url(../imgs/pack-up.png) no-repeat center center;
+        background-size: 29px 16px;
+    }
+}

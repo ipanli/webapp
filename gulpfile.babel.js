@@ -15,11 +15,11 @@ import notify       from 'gulp-notify';
 import imagemin     from 'gulp-imagemin';
 import header       from 'gulp-header';
 import autoprefixer from 'gulp-autoprefixer';
-import px2rem       from 'gulp-px3rem';
+import px2rem       from 'gulp-pxrem';
 
 
 
-const day = '20160612', mincss = 'app.css', minjs = 'app.js',desc = '拼邮分享H5';
+const day = '20160809', mincss = 'app.css', minjs = 'app.js',desc = '拼邮分享H5';
 
 
 const browserSync = require('browser-sync').create();

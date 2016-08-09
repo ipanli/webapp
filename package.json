@@ -1,7 +1,7 @@
 {
   "name": "webapp",
   "version": "0.0.1",
-  "description": "拼邮分享H5",
+  "description": "拼邮的常见问题",
   "main": "gulpfile.babel.js",
   "scripts": {
     "start": "gulp",
@@ -33,7 +33,7 @@
     "gulp-imagemin": "^3.0.1",
     "gulp-minify-css": "^1.2.4",
     "gulp-notify": "^2.2.0",
-    "gulp-px3rem": "^0.3.0",
+    "gulp-pxrem": "0.0.2",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.1",
     "gulp-uglify": "^1.5.3"

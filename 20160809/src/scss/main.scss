@@ -1,0 +1,8 @@
+//主样式入口文件
+// @import '../../../node_modules/normalize.css/normalize.css';
+@import 'reset';
+@import 'com';
+@import 'layout';
+@import 'animations';
+
+@import 'app';

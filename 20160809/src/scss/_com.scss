@@ -1,0 +1,50 @@
+.porela {
+    position: relative;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.bgcolor {
+    background: #F8F8F8;
+}
+
+.bgc2 {
+    background: #e64828;
+}
+
+.pd20 {
+    padding: 20px;
+}
+
+.pd30 {
+    padding: 30px;
+}
+
+.center {
+    text-align: center;
+}
+
+.yello {
+    color: #fff441;
+}
+
+.red {
+    color: #fd4530;
+}
