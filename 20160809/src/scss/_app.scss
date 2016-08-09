@@ -7,6 +7,7 @@
         margin-left: 30px;
         font-size: 28px;
         border-bottom: 1px solid #D8D8D8;
+        /*no*/
         position: relative;
         padding: 20px;
         padding-left: 30px;
@@ -14,11 +15,11 @@
         &:before {
             position: absolute;
             display: block;
-            height: 30px;
-            width: 6px;
+            height: 26px;
+            width: 4px;
             left: 0;
             top: 50%;
-            margin-top: -15px;
+            margin-top: -13px;
             background: #FF6E6E;
             content: '';
         }
@@ -56,10 +57,14 @@
             }
         }
     }
+    a {
+        text-decoration: none;
+    }
     .content-wp {
         padding: 10px 30px;
         line-height: 40px;
         border-bottom: 1px solid #D8D8D8;
+        /*no*/
         display: none;
         .content {
             padding-bottom: 10px;

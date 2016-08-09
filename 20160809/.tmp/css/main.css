@@ -431,11 +431,8 @@ li {
 
 .slideDown {
   animation-name: slideDown;
-  -webkit-animation-name: slideDown;
   animation-duration: 1s;
-  -webkit-animation-duration: 1s;
   animation-timing-function: ease;
-  -webkit-animation-timing-function: ease;
   visibility: visible !important; }
 
 @keyframes slideDown {
@@ -1205,6 +1202,7 @@ stretchRight
     margin-left: 30px;
     font-size: 28px;
     border-bottom: 1px solid #D8D8D8;
+    /*no*/
     position: relative;
     padding: 20px;
     padding-left: 30px;
@@ -1212,11 +1210,11 @@ stretchRight
     .help-problem h5:before {
       position: absolute;
       display: block;
-      height: 30px;
-      width: 6px;
+      height: 26px;
+      width: 4px;
       left: 0;
       top: 50%;
-      margin-top: -15px;
+      margin-top: -13px;
       background: #FF6E6E;
       content: ''; }
     .help-problem h5:after {
@@ -1242,10 +1240,13 @@ stretchRight
     display: none; }
   .help-problem li.show .content-wp {
     display: block; }
+  .help-problem a {
+    text-decoration: none; }
   .help-problem .content-wp {
     padding: 10px 30px;
     line-height: 40px;
     border-bottom: 1px solid #D8D8D8;
+    /*no*/
     display: none; }
     .help-problem .content-wp .content {
       padding-bottom: 10px; }

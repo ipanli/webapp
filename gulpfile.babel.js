@@ -41,7 +41,7 @@ gulp.task('sass', () => gulp.src(`./${day}/src/scss/main.scss`)
     .pipe(sass({ style: 'expanded' }))
     .pipe(gulp.dest(`./${day}/.tmp/css`))
     .pipe(autoprefixer({
-			browsers: ['> 1%', 'IE 8'],
+			browsers: ['> 1%', 'IE 8','Firefox >= 20'],
 			cascade: false
 	 }))
     .pipe(px2rem())
