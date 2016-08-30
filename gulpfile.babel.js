@@ -5,6 +5,7 @@
  * 2016年06月12日16:44:43
  */
 import pkg          from './package.json';
+import conf         from './config.json';
 import gulp         from 'gulp';
 import sass         from 'gulp-sass';
 import concat       from 'gulp-concat';
