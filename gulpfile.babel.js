@@ -5,7 +5,7 @@
  * 2016年06月12日16:44:43
  */
 import pkg          from './package.json';
-import conf         from './config.json';
+
 import gulp         from 'gulp';
 import sass         from 'gulp-sass';
 import concat       from 'gulp-concat';
@@ -22,6 +22,7 @@ import px2rem       from 'gulp-pxrem';
 
 const day = '20160809', mincss = 'app.css', minjs = 'app.js',desc = '拼邮分享H5';
 
+import conf        from `${day}/config.json`;
 
 const browserSync = require('browser-sync').create();
 const reload      = browserSync.reload;
