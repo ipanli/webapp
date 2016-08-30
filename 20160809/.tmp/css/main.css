@@ -1240,8 +1240,6 @@ stretchRight
     display: none; }
   .help-problem li.show .content-wp {
     display: block; }
-  .help-problem a {
-    text-decoration: none; }
   .help-problem .content-wp {
     padding: 10px 30px;
     line-height: 40px;

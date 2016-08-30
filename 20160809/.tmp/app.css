@@ -1910,10 +1910,6 @@ stretchRight
   display: block;
 }
 
-.help-problem a {
-  text-decoration: none;
-}
-
 .help-problem .content-wp {
   padding: 0.133333rem 0.4rem;
   line-height: 0.533333rem;
