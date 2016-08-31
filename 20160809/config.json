@@ -1,7 +1,0 @@
-{   
-    "title":"拼邮分享H5",
-    "load":{
-        "css":"",
-        "js":"../libs/js/zepto.js"
-    }
-}
