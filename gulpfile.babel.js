@@ -70,7 +70,7 @@ gulp.task('ejs', () => gulp.src(`./${day}/src/templates/*.ejs`)
     .pipe(rename({extname: ".html"}))
     .pipe(gulp.dest(`./${day}/`))
     .pipe(reload({ stream: true }))
-    .pipe(notify({ message: 'ejs task complete' })))
+    .pipe(notify({ message: 'ejs task complete' })));
 
 gulp.task('sass', () => gulp.src(cssLoadSrc)
     .pipe(sass({ style: 'expanded' }))
@@ -79,7 +79,7 @@ gulp.task('sass', () => gulp.src(cssLoadSrc)
 			browsers: ['> 1%', 'IE 8','Firefox >= 20'],
 			cascade: false
 	 }))
-    .pipe(px2rem())
+    // .pipe(px2rem())
     .pipe(rename(mincss))
     .pipe(gulp.dest(`./${day}/.__/`))
     .pipe(minifycss())

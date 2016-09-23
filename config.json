@@ -1,5 +1,20 @@
 {   
-    "start":"20160809",
+    "start":"20160923",
+    "20160923": {
+        "title": "帮助",
+        "keywords":"Panli代购,代购,海外代购,华人代购,代购中国,淘宝代购,留学生代购",
+        "description":"",
+        "version":"0.0.2",
+        "author":"Julian",
+        "load": {
+            "css": ["./libs/scss/zepto.fullpage.css","./20160923/src/scss/main.scss"],
+            "js": ["./libs/js/zepto.js","./libs/js/_zepto_fullpage.js","./20160923/src/js/*.js"]
+        },
+        "build":{
+            "css":"app.css",
+            "js":"app.js"
+        }
+    },
     "20160809": {
         "title": "拼邮的常见问题",
         "keywords":"Panli代购,代购,海外代购,华人代购,代购中国,淘宝代购,留学生代购",
