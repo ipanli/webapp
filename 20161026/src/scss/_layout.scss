@@ -1,0 +1,34 @@
+html,
+body {
+    font-family: "Microsoft Yahei", Microsoft JhengHei, Hiragino Sans GB, NotoSans-Regular, Helvetica, Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 750px;
+    /* no */
+    height: 100%;
+    /*no*/
+}
+
+body {
+    // font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Microsoft Yahei", Microsoft JhengHei, Hiragino Sans GB, NotoSans-Regular, Helvetica, Arial, sans-serif;
+    // -webkit-font-smoothing: antialiased;
+    // -moz-osx-font-smoothing: grayscale;
+    // -moz-font-feature-settings: "liga", "kern";
+}
+
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.m-auto {
+    margin: 0 auto;
+}
+
+.app {
+    padding-top: 10px/*no*/
+    
+}

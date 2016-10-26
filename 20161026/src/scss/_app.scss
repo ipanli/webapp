@@ -1,0 +1,102 @@
+.app {
+    max-width: 750px;
+    height: 100%;
+    position: relative;
+    background-color: #F8F8F8;
+    color: #333;
+}
+
+.wp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+.border-top-bottom{
+    border: 1px solid #CCC;
+    border-left: none;
+    border-right: none;
+}
+.header {
+    height: 88px;
+    line-height: 88px;
+    font-size: 38px;
+    text-align: center;
+    color: #333;
+    .btn-back {
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        background: url(../images/btn_back.png) no-repeat center center;
+        background-size: 100% 100%;
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        margin-top: -25px;
+    }
+    .btn-save {
+        position: absolute;
+        font-size: 30px;
+        right: 20px;
+        color: #666;
+    }
+}
+
+.main {
+    background-color: #FFF;
+    padding-left: 30px;
+    margin-bottom: 16px;
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li {
+        font-size: 26px;
+        padding: 20px 0;
+        border-bottom: 1px solid #CCC;
+        position: relative;
+        .title {
+            display: inline-block; 
+            width: 160px;
+            color: #666;
+        }
+        .add{
+            position: absolute;
+            display: inline-block;
+            width: 42px;
+            height: 40px;
+            background: url(../images/btn_add.png) no-repeat center center;
+            background-size: 100% 100%;
+            right: 20px;
+            top: 50%;
+            margin-top: -20px;
+        }
+    }
+    .address{
+        padding: 20px 0;
+        padding-bottom: 60px;
+    }
+}
+
+.footer {
+    height: 86px;
+    line-height: 86px;
+    padding-left: 20px;
+    color: #666;
+    background-color: #FFF;
+    .btn-switch{
+        position: absolute;
+        display: inline-block;
+        width: 104px;
+        height: 74px;
+        background: url(../images/btn_switch.png) no-repeat center center;
+        background-size: 100% 100%;
+        right: 20px;
+        top: 50%;
+        margin-top: -37px;
+    }
+}

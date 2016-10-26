@@ -1,5 +1,20 @@
 {   
-    "start":"20160923",
+    "start":"20161026",
+    "20161026": {
+        "title": "添加新地址",
+        "keywords":"Panli代购,代购,海外代购,华人代购,代购中国,淘宝代购,留学生代购",
+        "description":"",
+        "version":"0.0.1",
+        "author":"Julian",
+        "load": {
+            "css": ["./20161026/src/scss/main.scss"],
+            "js": ["./libs/js/zepto.js","./libs/js/flexible.js","./20161026/src/js/*.js"]
+        },
+        "build":{
+            "css":"app.css",
+            "js":"app.js"
+        }
+    },
     "20160923": {
         "title": "帮助",
         "keywords":"Panli代购,代购,海外代购,华人代购,代购中国,淘宝代购,留学生代购",

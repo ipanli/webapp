@@ -73,13 +73,13 @@ gulp.task('ejs', () => gulp.src(`./${day}/src/templates/*.ejs`)
     .pipe(notify({ message: 'ejs task complete' })));
 
 gulp.task('sass', () => gulp.src(cssLoadSrc)
-    .pipe(sass({ style: 'expanded' }))
+    .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest(`./${day}/.__/css`))
     .pipe(autoprefixer({
 			browsers: ['> 1%', 'IE 8','Firefox >= 20'],
 			cascade: false
 	 }))
-    // .pipe(px2rem())
+    .pipe(px2rem())
     .pipe(rename(mincss))
     .pipe(gulp.dest(`./${day}/.__/`))
     .pipe(minifycss())
