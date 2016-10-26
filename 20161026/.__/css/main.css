@@ -499,7 +499,18 @@ textarea {
       right: 20px;
       top: 50%;
       margin-top: -20px; }
+    .main li .right {
+      position: absolute;
+      display: inline-block;
+      width: 14px;
+      height: 26px;
+      background: url(../images/right.png) no-repeat center center;
+      background-size: 100% 100%;
+      right: 30px;
+      top: 50%;
+      margin-top: -13px; }
   .main .address {
+    font-size: 26px;
     padding: 20px 0;
     padding-bottom: 60px; }
 
@@ -508,6 +519,7 @@ textarea {
   line-height: 86px;
   padding-left: 20px;
   color: #666;
+  font-size: 26px;
   background-color: #FFF; }
   .footer .btn-switch {
     position: absolute;
